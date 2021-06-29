@@ -17,10 +17,10 @@ public class AdminServlet extends HttpServlet {
             if (isAdmin) {
                 out.println("<h1>Welcome home, Admin.</h1>");
             } else {
-                resp.sendRedirect("/hello-world");
+                resp.sendRedirect("/hello");
             }
         } catch (NullPointerException npe) {
-            resp.sendRedirect("/hello-world");
+            resp.sendRedirect("/hello");
         }
     }
 }
