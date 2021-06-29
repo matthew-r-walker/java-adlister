@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 public class CountPageServlet extends HttpServlet {
 
     private int count = 0;
+    @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
