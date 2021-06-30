@@ -11,5 +11,8 @@
     <c:if test="false">
         <h1>single letter variable names are good</h1>
     </c:if>
+    <script>
+        <%@include file="test.js"%>
+    </script>
 </body>
 </html>
