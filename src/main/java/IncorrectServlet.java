@@ -11,6 +11,8 @@ public class IncorrectServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         String outcome = "You lose! You guessed the incorrect number.";
         req.setAttribute("outcome", outcome);
+        String out = "Loser!";
+        req.setAttribute("out", out);
         req.getRequestDispatcher("/outcomeview.jsp").forward(req, resp);
     }
 }

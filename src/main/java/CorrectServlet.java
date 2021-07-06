@@ -11,6 +11,8 @@ public class CorrectServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         String outcome = "You won! You guessed the correct number.";
         req.setAttribute("outcome", outcome);
+        String out = "Winner!";
+        req.setAttribute("out", out);
         req.getRequestDispatcher("/outcomeview.jsp").forward(req, resp);
     }
 }

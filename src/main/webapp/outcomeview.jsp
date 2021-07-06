@@ -12,10 +12,9 @@
 
 <html>
 <head>
-    <title>Title</title>
+    <title>${out}</title>
 </head>
 <body>
-    <h1>This is the outcome page.</h1>
     <h1>${outcome}</h1>
 </body>
 </html>
