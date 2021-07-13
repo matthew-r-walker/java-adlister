@@ -33,17 +33,17 @@ public class MySQLUsersDao implements Users {
         );
     }
 
-    private List<User> createUsersFromResults(ResultSet rs) throws SQLException {
-        List<User> users = new ArrayList<>();
-        while (rs.next()) {
-            users.add(extractUser(rs));
-        }
-        return users;
-    }
+//    private List<User> createUsersFromResults(ResultSet rs) throws SQLException {
+//        List<User> users = new ArrayList<>();
+//        while (rs.next()) {
+//            users.add(extractUser(rs));
+//        }
+//        return users;
+//    }
 
     @Override
     public User findByUsername(String username) {
-        String sql = "SELECT * FROM users WHERE username LIKE ?";
+        String sql = "SELECT * FROM users WHERE username = ?";
         try {
             PreparedStatement stmt = connection.prepareStatement(sql);
             stmt.setString(1, username);

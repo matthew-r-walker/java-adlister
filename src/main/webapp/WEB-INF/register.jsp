@@ -22,6 +22,10 @@
                 <label for="password">Password</label>
                 <input name="password" id="password" type="password" class="form-control" placeholder="Create a password" required>
             </div>
+            <div class="form-group">
+                <label for="confirm_password">Password</label>
+                <input name="confirm_password" id="confirm_password" type="password" class="form-control" placeholder="Create a password" required>
+            </div>
             <button class="btn btn-block btn-primary">Create account</button>
         </form>
     </div>
